@@ -1,0 +1,75 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#title {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#version, #high-score {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+#start-button {
+    font-size: 1.2em;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#flash-display {
+    font-size: 3em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.choice-button {
+    font-size: 1.2em;
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Smartphone portrait styles */
+@media (max-width: 480px) {
+    #title {
+        font-size: 1.2em;
+    }
+    #version, #high-score {
+        font-size: 1em;
+    }
+    #start-button, .choice-button {
+        font-size: 1em;
+        padding: 10px;
+    }
+    #flash-display {
+        font-size: 2em;
+    }
+}
